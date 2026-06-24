@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5E6C8; /* Background color */
+    color: #5C4033; /* Text color */
+}
+
+/* ------------------------------------------------------------- */
+/* 1. Navbar Styles */
+/* ------------------------------------------------------------- */
+.navbar {
+    background-color: #E8D5B7; /* Card/Navbar background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 4px 6px rgba(92, 64, 51, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5C4033;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5C4033;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Hover & Active States */
+.nav-links a:hover, 
+.nav-links a.active {
+    color: #6B4F3A; /* Button color for interaction */
+}
+
+/* ------------------------------------------------------------- */
+/* 2. Hero Section */
+/* ------------------------------------------------------------- */
+.hero-section {
+    position: relative;
+    height: 60vh;
+    /* You can replace this image URL with your preferred local image path later */
+    background-image: linear-gradient(rgba(92, 64, 51, 0.4), rgba(92, 64, 51, 0.4)), 
+                      url(Mu7N9u_KWiklkd13qh73_jEyXQePJi_y7yUiHc0TI_i1m-iVY6jtyqCx6p0dFXCvFV5SCPpNP2esaR7jvaL72Cjz9VBVgTBFy85LbWB3iZ_iTYYtybybUVtz4YiI3Qh75NOsJGdAgcdfw3-I_Du0CsRvHiCB6b7hJ-qiy4PoVe9N5Lo8rxJDZWQove8doa4t.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF; /* White text for readability over the background image */
+    padding: 20px;
+}
+
+.event-title {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------------------------------- */
+/* 3. Welcome Text Section (Card) */
+/* ------------------------------------------------------------- */
+.welcome-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #E8D5B7; /* Card color */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(92, 64, 51, 0.08);
+}
+
+.welcome-title {
+    font-size: 2.2rem;
+    color: #5C4033;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.welcome-p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #5C4033;
+    margin-bottom: 30px;
+}
+
+/* Main CTA Button */
+.cta-btn {
+    display: inline-block;
+    background-color: #6B4F3A; /* Button color */
+    color: #F5E6C8; /* Text color inside button */
+    padding: 12px 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+.cta-btn:hover {
+    background-color: #5C4033;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(92, 64, 51, 0.2);
+}
+
+/* ------------------------------------------------------------- */
+/* Responsive Design for Mobile Devices */
+/* ------------------------------------------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .event-title {
+        font-size: 2.8rem;
+    }
+    .welcome-section {
+        margin: 40px 20px;
+        padding: 25px 15px;
+    }
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+    .welcome-p {
+        font-size: 1.05rem;
+    }
+}
