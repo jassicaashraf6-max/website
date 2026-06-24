@@ -1,0 +1,84 @@
+   * {
+       font-family: "Kalam", cursive;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       list-style: none;
+       text-decoration: none;
+   }
+
+   :root {
+       --bg-color:#F5E6C8;
+       --text-color:#64290e;
+       --main-color: #E8D5B7 ;
+       --btn-color:#6B4F3A ;
+       --big-font: 4rem;
+       --p-font: 1.1rem;
+   }
+
+   body {
+       background: var(--bg-color);
+       color: var(--text-color);
+       overflow-x: hidden;
+       caret-color: transparent;
+   }
+   
+.contact h2 {
+     text-align: center;
+    font-size: 4rem;
+    margin: 5rem 0;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+    text-align: center;
+
+}
+
+.contact span {
+    color: var(--btn-color);
+}
+
+.contact form .input-box input,
+.contact form textarea,button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+
+   .footer {
+    padding: 50px 0;
+}
+
+.footer .icons {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer ul {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.footer ul li a {
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--text-color);
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
